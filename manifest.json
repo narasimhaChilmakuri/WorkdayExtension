@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Workday Resume Autofill",
+  "version": "1.0",
+  "description": "Autofill Workday job applications using your resume and Gemini AI.",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Workday Autofill"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.myworkdayjobs.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.myworkdayjobs.com/*"],
+      "js": ["content/autofill.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [],
+      "matches": ["*://*.myworkdayjobs.com/*"]
+    }
+  ]
+}

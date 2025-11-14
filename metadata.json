@@ -1,0 +1,5 @@
+{
+  "name": "Workday Resume Autofill",
+  "description": "A Chrome extension to automatically fill job application data on Workday websites by parsing a user's resume with Gemini.",
+  "requestFramePermissions": []
+}
